@@ -1,0 +1,13 @@
+.card{
+    background: linear-gradient(#2E2F36, #17181C);
+    position: absolute;
+    
+    height: 900px;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    width: 50%;
+
+    
+}
+

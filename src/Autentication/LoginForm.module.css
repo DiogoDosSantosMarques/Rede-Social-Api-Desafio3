@@ -1,0 +1,56 @@
+.log{
+    margin-right: 30%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.form input{
+    color: white;
+    border-radius: 46px;
+    border: 2px solid white;
+    width: 306px;
+    height: 52px;
+    background-color: transparent;
+    margin: 15px;
+}
+
+.formr input{
+    color: white;
+    border-radius: 46px;
+    border: 2px solid white;
+    width: 306px;
+    height: 40px;
+    background-color: transparent;
+    margin: 15px;
+}
+
+.contentr{
+    
+}
+
+.content{
+    border: 1px solid blue;
+}
+
+
+
+
+.botao button{
+    margin-top: 2%;
+    width: 306px;
+    height: 46px;
+    border-radius: 46px;
+    background: linear-gradient(#AD2D14, #F42E07);
+}
+
+
+.error{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #E9B425;
+}
+
+input.errorInput{
+    border: 2px solid #E9B425;
+}

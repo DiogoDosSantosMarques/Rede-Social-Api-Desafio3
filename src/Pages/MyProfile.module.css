@@ -1,0 +1,147 @@
+
+
+.topcontent{
+    background-color: #2E2F36;
+    margin-top: 2%;
+    margin-left: 16.5%;
+    position: relative;
+    width: 1050px;
+    height: 400px;
+    border-radius: 16px;
+}
+
+.bac{
+    width: 1050px;
+    height: 280px;
+    position: relative;
+}
+
+.fotoperfil{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+
+}
+
+.nomeprofi{
+    position: absolute;
+   color: #E9B425;
+    width: 238px;
+   padding: 2px;
+    left: 23%;
+}
+
+.profi{
+    margin-right: 30%;
+}
+
+
+.edit{
+    position: absolute;
+   
+   
+   
+   padding: 16px, 24px, 16px, 24px;
+   right:  10%;
+   top: 77%;
+}
+
+.edit button{
+    width: 140px;
+   height: 56px;
+    border-radius: 46px;
+    background: linear-gradient(#bd3a20, #F42E07);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+}
+
+
+.sobre{
+    border: 1px solid blue;
+    width: 368px;
+    height: 405px;
+    margin-left: 16%;
+    border-radius: 16px;
+    margin-top: 3%;
+    background-color: #2E2F36;
+    color: #F5F5F5;
+}
+
+
+.postview{
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(233, 180, 37, 1);
+    width: 698px;
+    height: 664px;
+    border-radius: 16px;
+    position: absolute;
+    left: 53%;
+    top: 90%;
+    margin-right: 10px;
+    
+}
+
+.folw{
+    position: absolute;
+   
+    margin-left: 25%;
+}
+
+.foli{
+    position: absolute;
+    margin-left: 43%;
+    
+}
+
+.postapi{
+    
+    margin-left: 30%;
+   
+}
+
+
+
+
+
+/* Adicione estas regras no seu arquivo CSS */
+
+/* Estilo do fundo escuro (fundo modal) */
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo do formulário modal */
+  .modal-form {
+    background-color: #fff; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do formulário */
+  }
+  
+  /* Estilo dos botões dentro do formulário */
+  .modal-form button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o botão de cancelar */
+  .modal-form button.cancel {
+    background-color: #ccc;
+    margin-right: 10px;
+  }

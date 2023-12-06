@@ -1,0 +1,142 @@
+.navbar{
+    display: flex;
+   
+    align-items: center;
+    
+    background-color: rgb(56, 57, 66);
+    border: 2px solid #2E2F36;
+    width: 1262px;
+    height: 73px;
+    
+  top: 0;
+  right: 0;
+  
+    position: absolute;
+}
+
+.mundo{
+    position: absolute;
+    margin-left: 76%;
+    margin-top: -1%;
+    
+}
+
+.sino{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: -0.8%;
+}
+
+.conteudo{
+    border: 1px solid grey;
+   margin-left: 10%;
+    width: 180px;
+    height: 172px;
+    cursor: pointer;
+}
+
+.conteudo > div{
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.conteudo :hover{
+    background-color: #FE2E05;
+    
+    color: #1E1F23;
+}
+
+.conteudo a{
+    color: white;
+}
+
+.social{
+    position: absolute;
+   margin-left: 20%;
+   font-size: 20px;
+   color: rgba(255, 255, 255, 1)
+
+}
+
+.voltar{
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -1%;
+}
+
+.parsed{
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 84%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:  rgba(255, 255, 255, 1);
+    ;
+}
+
+
+.perfas{
+    position: absolute;
+    margin-top: -1.5%;
+    margin-left: 90%;
+}
+
+
+.amigos{
+    width: 262px;
+    height: 242px;
+    border: 2px solid rgb(74, 75, 83);
+  margin-top: 5%;
+    margin-left: 78%;
+    border-radius: 16px;
+    background-color: rgba(46, 47, 54, 1);
+    font-size: 16x;
+    font-family: Inter;
+    font-weight: 400;
+    
+}
+
+.amigos h3{
+    margin-right: 30%;
+    color: white;
+    font-size: 16px;
+
+    
+}
+
+.amigos ul{
+    list-style: none;
+    
+   padding: 0;
+   
+}
+
+.amigos li {
+    margin-bottom: 20px;
+    
+}
+
+.amigos a{
+    color: white;
+}
+
+.opost {
+    background-color: rgba(30, 31, 35, 1);
+    border-radius: 16px;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 5%;
+    border: 2px solid rgba(46, 47, 54, 1);
+    width: 720px;
+    height: 137px;
+}
+
+.opost input {
+    border-radius: 46px;
+    height: 30px;
+    margin-left: 5%;
+    width: 600px;
+    background-color: rgba(39, 40, 47, 1);
+    margin-top: 3%;
+}
