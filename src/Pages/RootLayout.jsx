@@ -71,7 +71,7 @@ export default function RootLayout(){
     </div>
 
     
-    <h1 className={styles.parsed}>{parsedUser}</h1>
+    <h1 className={styles.parsed}>{user.username}</h1>
     
 
 </div> 

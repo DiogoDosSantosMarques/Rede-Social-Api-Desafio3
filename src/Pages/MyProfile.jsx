@@ -14,7 +14,7 @@ export default function MyProfile(){
     
     const { userId } = useParams();
   const [user, setUser] = useState({});
-
+  const [editedUser, setEditedUser] = useState({});
 
 
   const [nome, setNome] = useState("");
@@ -38,6 +38,7 @@ export default function MyProfile(){
     return sexMap[sex] || sex; // Use o valor original se não houver mapeamento
   };
 
+  
   
   const handleEdit = async (e) => {
     e.preventDefault();
@@ -66,6 +67,8 @@ export default function MyProfile(){
       );
   
       console.log("Usuário Editado", response.data);
+
+      
   
       // Atualizar os dados do usuário após a edição
       const updatedUserData = await axios.get(
@@ -78,6 +81,7 @@ export default function MyProfile(){
       );
   
       setUser(updatedUserData.data || {});
+      setEditedUser(response.data);
       setModalOpen(false);
     } catch (error) {
       if (error.response && error.response.status === 401) {
@@ -146,7 +150,7 @@ return(
         <div className={styles.topcontent}>
 
         <div>
-            <img className={styles.bac} src={back} alt="" />
+            <img className={styles.bac} src={back} alt=""  />
         </div>
 
             <div>
@@ -174,10 +178,10 @@ return(
             <div className={styles.modalBackground}>
         <form className={styles.modalForm} onSubmit={handleEdit}>
         <div >
-        <input type="text" placeholder="Nome"  />
+        <input type="text" placeholder="Nome" autoComplete="off" onChange={(e) => setNome(e.target.value)}  />
         </div>
         <div>
-        <input type="text" placeholder="Cargo/Profissão"  />
+        <input type="text" placeholder="Cargo/Profissão" autoComplete="off" onChange={(e) => setProfissao(e.target.value)}   />
         </div>
         <div>
   <label>Sexo</label>
@@ -187,13 +191,13 @@ return(
   </select>
 </div>
         <div>
-        <input type="date" placeholder="Data de Nascimento"  />
+        <input type="date" placeholder="Data de Nascimento" autoComplete="off" onChange={(e) => setNascimento(e.target.value)}    />
         </div>
         <div>
-        <input type="text" placeholder="Endereço"  />
+        <input type="text" placeholder="Endereço" autoComplete="off" onChange={(e) => setEndereco(e.target.value)}   />
         </div>
         <div>
-        <input type="text" placeholder="Telefone"  />
+        <input type="text" placeholder="Telefone" autoComplete="off" onChange={(e) => setTelefone(e.target.value)}   />
         </div>
         
          
@@ -217,14 +221,14 @@ return(
 
 
         <div className={styles.sobre}>
-      <h2>Sobre</h2>
-      <div>{user.nome}</div>
-      <div>{user.cargo}</div>
-      <div>{user.sexo}</div>
-      <div>{user.nascimento}</div>
-      <div>{user.endereco}</div>
-      <div>{user.telefone}</div>
-    </div>
+  <h2>Sobre</h2>
+  <div>{editedUser.name}</div>
+  <div>{editedUser.occupation}</div>
+  <div>{editedUser.sex}</div>
+  <div>{editedUser.birthdate}</div>
+  <div>{editedUser.address}</div>
+  <div>{editedUser.phone}</div>
+</div>
 
 
 
